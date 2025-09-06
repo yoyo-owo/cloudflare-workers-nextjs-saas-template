@@ -87,6 +87,10 @@
         {
             "binding": "yoyo-auth",
             "id": "95659b31cae247c3944d5c0f7121a447"
-        }
+        },
+        {
+            "binding": "NEXT_INC_CACHE_KV",
+            "id": "3c183f811d60451ca1f1196aa184c330"
+        },
     ]
   }
