@@ -4,8 +4,8 @@
  */
  {
     "$schema": "node_modules/wrangler/config-schema.json",
-    "account_id": "82e5aa3e06eba55221231ef482269452",
-    "name": "cloudflare-workers-nextjs-saas-template",
+    "account_id": "56e3834566a0335b429760a2f07580e7",
+    "name": "yoyo-auth",
     "main": ".open-next/worker.js",
     "compatibility_date": "2025-03-01",
     "compatibility_flags": [
@@ -39,9 +39,9 @@
      * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
      */
     "vars": {
-        "EMAIL_FROM": "no-reply@notifications.agenticdev.agency",
-        "EMAIL_FROM_NAME": "AgenticDev.agency",
-        "EMAIL_REPLY_TO": "support@agenticdev.agency"
+        "EMAIL_FROM": "no-reply@yoyonet.qzz.io",
+        "EMAIL_FROM_NAME": "yoyo-auth",
+        "EMAIL_REPLY_TO": "support@yoyonet.qzz.io"
     },
     /**
      * Note: Use secrets to store sensitive data.
@@ -55,7 +55,7 @@
      "services": [
       {
         "binding": "WORKER_SELF_REFERENCE",
-        "service": "cloudflare-workers-nextjs-saas-template"
+        "service": "yoyo-auth"
       }
     ],
 
@@ -78,15 +78,15 @@
     "d1_databases": [
         {
             "binding": "NEXT_TAG_CACHE_D1",
-            "database_name": "cloudflare-workers-nextjs-saas",
-            "database_id": "94dd1269-a29c-4621-adff-1762d1af6926",
+            "database_name": "yoyo-auth",
+            "database_id": "b1146f95-9f11-4367-83d9-6090e5522401",
             "migrations_dir": "src/db/migrations"
         }
     ],
     "kv_namespaces": [
         {
-            "binding": "NEXT_INC_CACHE_KV",
-            "id": "c6f2b077e0a34a84b3598558eb833055"
+            "binding": "yoyo-auth",
+            "id": "95659b31cae247c3944d5c0f7121a447"
         }
     ]
   }
